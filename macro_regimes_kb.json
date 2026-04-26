@@ -1,0 +1,193 @@
+[
+  {
+    "pattern_id": "oil_spx_negative",
+    "macro_theme": "Inflation / Stagflation Trade",
+    "historical_instances": [
+      {
+        "period": "1973-1974",
+        "context": "Arab oil embargo following the Yom Kippur War. Oil prices quadrupled from $3 to $12 per barrel.",
+        "equity_behavior": "S&P 500 crashed over 40% peak-to-trough as inflation surged and the economy entered a severe recession.",
+        "rates_behavior": "The Federal Reserve hiked interest rates aggressively to combat double-digit inflation, exacerbating the economic contraction.",
+        "resolution": "The embargo was lifted in March 1974 after diplomatic negotiations, but the economic damage and stagflation persisted for years."
+      },
+      {
+        "period": "1990-1991",
+        "context": "First Gulf War following Iraq's invasion of Kuwait. Oil prices spiked from $17 to $40 per barrel.",
+        "equity_behavior": "S&P 500 fell nearly 20% in the immediate aftermath of the invasion as recession fears mounted.",
+        "rates_behavior": "The Fed had already been tightening, but the oil shock tipped the US into a mild recession.",
+        "resolution": "Oil prices collapsed back to pre-war levels once the US-led coalition launched Operation Desert Storm in early 1991, sparking a massive equity rally."
+      },
+      {
+        "period": "2007-2008",
+        "context": "Commodity supercycle peak. Oil surged to an all-time high of $147 per barrel in July 2008.",
+        "equity_behavior": "Equities were already weakening due to the subprime mortgage crisis, but the oil spike acted as a massive tax on consumers, accelerating the crash.",
+        "rates_behavior": "The Fed was cutting rates to fight the housing bust, but the oil spike temporarily complicated their inflation mandate.",
+        "resolution": "Demand destruction from the Great Financial Crisis caused oil to crash from $147 to $32 by late 2008."
+      },
+      {
+        "period": "2022",
+        "context": "Russia's invasion of Ukraine triggered a massive supply shock. Oil spiked above $130 per barrel.",
+        "equity_behavior": "S&P 500 entered a bear market, falling over 20% as the oil shock exacerbated post-pandemic inflation.",
+        "rates_behavior": "The Fed embarked on its most aggressive rate-hiking cycle in 40 years to crush inflation.",
+        "resolution": "Oil prices gradually ground lower throughout late 2022 and 2023 as supply chains adjusted and strategic reserves were released."
+      }
+    ],
+    "typical_duration_months": 6,
+    "warning_signals": [
+      "Geopolitical supply disruptions in major producing regions (Middle East, Russia).",
+      "Simultaneous spikes in broad commodity indices and headline CPI.",
+      "Central banks forced to hike rates into a slowing economy to fight inflation."
+    ]
+  },
+  {
+    "pattern_id": "gold_real_yield_positive",
+    "macro_theme": "Atypical Regime: Reflation, Commodity Supercycle, or Geopolitical Fear",
+    "historical_instances": [
+      {
+        "period": "2005-2006",
+        "context": "Mid-2000s commodity supercycle driven by massive Chinese infrastructure demand and global reflation.",
+        "equity_behavior": "Global equities were in a strong bull market, particularly emerging markets and commodity producers.",
+        "rates_behavior": "The Fed was steadily hiking rates (nominal and real yields rising) to cool the booming economy.",
+        "resolution": "Gold rose alongside real yields because the sheer momentum of the commodity supercycle and inflation expectations overpowered the opportunity cost of higher rates."
+      },
+      {
+        "period": "2024-2025",
+        "context": "Structural shift in gold demand driven by massive central bank purchases (especially EM central banks diversifying away from the US dollar) and geopolitical fragmentation.",
+        "equity_behavior": "Equities performed well, driven by AI and US economic exceptionalism.",
+        "rates_behavior": "Real yields remained elevated (around 2%) as the Fed held rates high, yet gold repeatedly broke all-time highs.",
+        "resolution": "Ongoing. The traditional inverse relationship broke down as sovereign buying and fiat debasement fears overwhelmed the mathematical drag of high real yields."
+      }
+    ],
+    "typical_duration_months": 24,
+    "warning_signals": [
+      "Massive, price-insensitive gold buying by global central banks.",
+      "Loss of confidence in fiat currencies or sovereign debt sustainability.",
+      "Broad-based commodity supercycles where all hard assets reprice higher simultaneously."
+    ]
+  },
+  {
+    "pattern_id": "gold_real_yield_negative",
+    "macro_theme": "Standard Regime: Financial Repression / ZIRP",
+    "historical_instances": [
+      {
+        "period": "1980-1999",
+        "context": "The great gold bear market. Following the Volcker shock, inflation was conquered and real interest rates remained structurally high for two decades.",
+        "equity_behavior": "Massive secular bull market in equities (1982-2000).",
+        "rates_behavior": "Real yields were highly positive, making zero-yielding gold an unattractive asset.",
+        "resolution": "Gold bottomed around $250 an ounce in 1999 as central banks (like the Bank of England) sold off reserves at the absolute lows."
+      },
+      {
+        "period": "2009-2011",
+        "context": "Post-GFC era of Zero Interest Rate Policy (ZIRP) and Quantitative Easing (QE1, QE2).",
+        "equity_behavior": "Equities recovered from the 2008 crash, supported by massive central bank liquidity.",
+        "rates_behavior": "Real yields plunged into negative territory as the Fed pinned nominal rates at zero while inflation expectations recovered.",
+        "resolution": "Gold surged to a record $1,920 in 2011. The bull market ended when the Fed signaled an eventual end to QE and real yields began to bottom."
+      },
+      {
+        "period": "2019-2020",
+        "context": "The Fed pivoted from hiking to cutting in 2019, followed by the massive pandemic QE response in 2020.",
+        "equity_behavior": "Equities crashed in March 2020 but staged a historic V-shaped recovery driven by stimulus.",
+        "rates_behavior": "Real yields collapsed to deeply negative levels (-1% on the 10-year TIPS).",
+        "resolution": "Gold surged past $2,000 in August 2020. The regime ended in 2022 when the Fed began aggressively hiking rates to fight inflation."
+      }
+    ],
+    "typical_duration_months": 36,
+    "warning_signals": [
+      "Central banks launching new Quantitative Easing programs.",
+      "Nominal interest rates pinned at the zero lower bound while inflation rises.",
+      "Dovish pivots by the Federal Reserve in response to economic weakness."
+    ]
+  },
+  {
+    "pattern_id": "dxy_em_negative",
+    "macro_theme": "Dollar Weakening / EM Tailwind",
+    "historical_instances": [
+      {
+        "period": "2002-2007",
+        "context": "A multi-year bear market for the US Dollar coinciding with the BRICS boom and a global commodity supercycle.",
+        "equity_behavior": "Emerging market equities massively outperformed US equities. The MSCI EM index delivered annualized returns near 30%.",
+        "rates_behavior": "US rates were relatively low following the dot-com bust, encouraging capital to seek higher yields abroad.",
+        "resolution": "The regime ended abruptly with the 2008 Global Financial Crisis, which triggered a massive flight to safety back into the US Dollar."
+      },
+      {
+        "period": "2017",
+        "context": "Synchronized global growth. The US dollar weakened despite the Fed slowly hiking rates, as growth in Europe and EM accelerated.",
+        "equity_behavior": "EM equities had a banner year, rising over 30% as earnings growth surged and financial conditions loosened.",
+        "rates_behavior": "Global yields were rising gently, but the growth differential favored non-US assets.",
+        "resolution": "Ended in 2018 when the US economy accelerated (due to tax cuts) while the rest of the world slowed, causing the dollar to rip higher."
+      }
+    ],
+    "typical_duration_months": 48,
+    "warning_signals": [
+      "US twin deficits (fiscal and current account) expanding rapidly.",
+      "Global growth accelerating synchronously, reducing the need for safe-haven USD.",
+      "Commodity prices rising, which improves the terms of trade for EM exporters."
+    ]
+  },
+  {
+    "pattern_id": "dxy_em_positive",
+    "macro_theme": "Risk-Off Contagion / Dollar Funding Squeeze",
+    "historical_instances": [
+      {
+        "period": "1997-1998",
+        "context": "Asian Financial Crisis. A strong US dollar exposed massive unhedged dollar-denominated debt in Asian corporate sectors.",
+        "equity_behavior": "Asian equity markets collapsed (down 30-50%), and currencies broke their pegs to the dollar.",
+        "rates_behavior": "The Fed had been relatively tight. EM central banks were forced to hike rates to defend currencies, crushing domestic growth.",
+        "resolution": "IMF bailouts, massive currency devaluations, and eventually the Fed cutting rates in late 1998 following the LTCM collapse."
+      },
+      {
+        "period": "2013",
+        "context": "The 'Taper Tantrum'. Fed Chair Bernanke hinted at slowing QE purchases, causing a sudden spike in US yields and the dollar.",
+        "equity_behavior": "The 'Fragile Five' (Brazil, India, Indonesia, Turkey, South Africa) saw massive capital outflows and equity market selloffs.",
+        "rates_behavior": "US 10-year yields spiked 100 basis points in a matter of months.",
+        "resolution": "The Fed walked back its hawkishness, delaying the actual taper, which allowed EM assets to stabilize."
+      },
+      {
+        "period": "2018",
+        "context": "Fed quantitative tightening and rate hikes drove the dollar higher, exposing vulnerabilities in Turkey and Argentina.",
+        "equity_behavior": "EM equities entered a bear market. The Turkish Lira and Argentine Peso collapsed.",
+        "rates_behavior": "US rates marched steadily higher until Q4 2018.",
+        "resolution": "The Fed famously 'pivoted' in early 2019, halting rate hikes and ending the dollar squeeze on EM."
+      }
+    ],
+    "typical_duration_months": 12,
+    "warning_signals": [
+      "Rapid appreciation of the US Dollar Index (DXY).",
+      "High levels of US dollar-denominated corporate debt in emerging markets.",
+      "Sudden hawkish shifts in Federal Reserve policy causing US yields to spike."
+    ]
+  },
+  {
+    "pattern_id": "yield_curve_inverted_spx_falling",
+    "macro_theme": "Recession Pricing / Cycle End",
+    "historical_instances": [
+      {
+        "period": "2000-2001",
+        "context": "The bursting of the Dot-Com bubble. The 10y-2y curve inverted in February 2000.",
+        "equity_behavior": "The S&P 500 peaked in March 2000, just weeks after the inversion, and subsequently halved in value over the next two years.",
+        "rates_behavior": "The Fed had hiked rates to 6.5%. As the recession hit, they aggressively slashed rates, causing the curve to rapidly steepen (bull steepening).",
+        "resolution": "The recession officially began in March 2001. The market bottomed in late 2002."
+      },
+      {
+        "period": "2006-2008",
+        "context": "The housing bubble peak. The curve first inverted in December 2005 and stayed inverted for over a year.",
+        "equity_behavior": "The stock market ignored the inversion for over a year, peaking in October 2007, before collapsing in the Great Financial Crisis.",
+        "rates_behavior": "The curve actually un-inverted (steepened) just before the recession began, as the market priced in emergency Fed rate cuts.",
+        "resolution": "The deepest recession since the Great Depression began in December 2007."
+      },
+      {
+        "period": "2019-2020",
+        "context": "Late-cycle slowdown exacerbated by the US-China trade war. The curve briefly inverted in August 2019.",
+        "equity_behavior": "The market experienced a sharp correction in late 2018/2019 but recovered to new highs before the pandemic hit.",
+        "rates_behavior": "The Fed cut rates three times in 2019 as an 'insurance policy', un-inverting the curve.",
+        "resolution": "The COVID-19 pandemic caused a massive, albeit brief, recession in early 2020."
+      }
+    ],
+    "typical_duration_months": 14,
+    "warning_signals": [
+      "The yield curve re-steepening rapidly after a long inversion (bull steepener), signaling the Fed is about to panic-cut rates.",
+      "Rising unemployment claims and deteriorating consumer sentiment.",
+      "Credit spreads (like high yield bonds) blowing out as corporate default risk rises."
+    ]
+  }
+]
