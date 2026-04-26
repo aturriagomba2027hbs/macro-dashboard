@@ -1,0 +1,54 @@
+name: Daily Macro Dashboard Refresh
+
+on:
+  # Runs every day at 7:00 AM Eastern Time (12:00 UTC, accounting for ET = UTC-5)
+  schedule:
+    - cron: '0 12 * * *'
+
+  # Also allows you to trigger the workflow manually from the GitHub website
+  workflow_dispatch:
+
+jobs:
+  refresh-data:
+    name: Fetch Data & Push to Gist
+    runs-on: ubuntu-latest
+
+    steps:
+      # ── Step 1: Check out this repository ────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── Step 2: Set up Python 3.11 ───────────────────────────────────────────
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # ── Step 3: Install all required Python packages ─────────────────────────
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install yfinance fredapi pandas requests
+
+      # ── Step 4: Run the full macro data pipeline ──────────────────────────────
+      # This downloads market data, computes correlations, and generates
+      # api_response_mini.json — then pushes it to your public GitHub Gist.
+      - name: Run macro pipeline
+        env:
+          GIST_ID:     ${{ secrets.GIST_ID }}
+          GIST_TOKEN:  ${{ secrets.GIST_TOKEN }}
+        run: |
+          python macro_pipeline.py
+          python rolling_corr.py
+          python generate_briefing.py
+          python build_api_response.py
+          python build_api_response_mini.py
+
+      # ── Step 5: Upload api_response_mini.json as a workflow artifact ──────────
+      # This lets you download the file directly from the GitHub Actions run page.
+      - name: Upload output as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: api-response-mini
+          path: api_response_mini.json
+          retention-days: 7
